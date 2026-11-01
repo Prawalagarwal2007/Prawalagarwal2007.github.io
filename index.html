@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Challan Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🚗 Challan Checker & Legal Help</h1>
+
+  <div class="card">
+    <input type="text" id="vehicleNumber" placeholder="Enter Vehicle Number (e.g. UP32AB1234)">
+    
+    <button onclick="checkChallan()">Check Challan</button>
+
+    <p class="note">
+      *We are not a government service. We only help with challan handling.
+    </p>
+  </div>
+
+  <div id="resultSection" class="hidden">
+    <h2>Challan Found?</h2>
+
+    <button class="pay" onclick="payNow()">Pay Through Us</button>
+    <button class="lawyer" onclick="hireLawyer()">Hire Lawyer</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
